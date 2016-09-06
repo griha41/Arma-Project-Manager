@@ -1,0 +1,38 @@
+c:\users\darren\documents\visual studio 2015\Projects\Arma Project Manager\Arma Project Manager\bin\Debug\Arma Project Manager.exe.config
+c:\users\darren\documents\visual studio 2015\Projects\Arma Project Manager\Arma Project Manager\bin\Debug\Arma Project Manager.exe
+c:\users\darren\documents\visual studio 2015\Projects\Arma Project Manager\Arma Project Manager\bin\Debug\Arma Project Manager.pdb
+c:\users\darren\documents\visual studio 2015\Projects\Arma Project Manager\Arma Project Manager\obj\Debug\Arma Project Manager.csprojResolveAssemblyReference.cache
+c:\users\darren\documents\visual studio 2015\Projects\Arma Project Manager\Arma Project Manager\obj\Debug\Arma Project Manager_MarkupCompile.cache
+c:\users\darren\documents\visual studio 2015\Projects\Arma Project Manager\Arma Project Manager\obj\Debug\Arma Project Manager_MarkupCompile.lref
+c:\users\darren\documents\visual studio 2015\Projects\Arma Project Manager\Arma Project Manager\obj\Debug\Arma Project Manager.g.resources
+c:\users\darren\documents\visual studio 2015\Projects\Arma Project Manager\Arma Project Manager\obj\Debug\Arma_Project_Manager.Properties.Resources.resources
+c:\users\darren\documents\visual studio 2015\Projects\Arma Project Manager\Arma Project Manager\obj\Debug\Arma Project Manager.csproj.GenerateResource.Cache
+c:\users\darren\documents\visual studio 2015\Projects\Arma Project Manager\Arma Project Manager\obj\Debug\Arma Project Manager.exe
+c:\users\darren\documents\visual studio 2015\Projects\Arma Project Manager\Arma Project Manager\obj\Debug\Arma Project Manager.pdb
+C:\Users\Darren\documents\visual studio 2015\Projects\Arma Project Manager\Arma Project Manager\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Darren\documents\visual studio 2015\Projects\Arma Project Manager\Arma Project Manager\obj\Debug\App.g.cs
+C:\Users\Darren\documents\visual studio 2015\Projects\Arma Project Manager\Arma Project Manager\obj\Debug\App.baml
+C:\Users\Darren\documents\visual studio 2015\Projects\Arma Project Manager\Arma Project Manager\obj\Debug\MainWindow.g.cs
+C:\Users\Darren\documents\visual studio 2015\Projects\Arma Project Manager\Arma Project Manager\obj\Debug\MainWindow.baml
+D:\Projects\Arma Project Manager\Arma Project Manager\bin\Debug\Arma Project Manager.exe.config
+D:\Projects\Arma Project Manager\Arma Project Manager\obj\Debug\Arma Project Manager.exe
+D:\Projects\Arma Project Manager\Arma Project Manager\obj\Debug\Arma Project Manager.pdb
+D:\Projects\Arma Project Manager\Arma Project Manager\bin\Debug\Arma Project Manager.exe
+D:\Projects\Arma Project Manager\Arma Project Manager\bin\Debug\Arma Project Manager.pdb
+D:\Projects\Arma Project Manager\Arma Project Manager\obj\Debug\Arma Project Manager.csprojResolveAssemblyReference.cache
+D:\Projects\Arma Project Manager\Arma Project Manager\obj\Debug\MainWindow.g.cs
+D:\Projects\Arma Project Manager\Arma Project Manager\obj\Debug\App.g.cs
+D:\Projects\Arma Project Manager\Arma Project Manager\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\Projects\Arma Project Manager\Arma Project Manager\obj\Debug\Arma Project Manager_MarkupCompile.cache
+D:\Projects\Arma Project Manager\Arma Project Manager\obj\Debug\Arma Project Manager_MarkupCompile.lref
+D:\Projects\Arma Project Manager\Arma Project Manager\obj\Debug\App.baml
+D:\Projects\Arma Project Manager\Arma Project Manager\obj\Debug\MainWindow.baml
+D:\Projects\Arma Project Manager\Arma Project Manager\obj\Debug\Arma Project Manager.g.resources
+D:\Projects\Arma Project Manager\Arma Project Manager\obj\Debug\Arma_Project_Manager.Properties.Resources.resources
+D:\Projects\Arma Project Manager\Arma Project Manager\obj\Debug\Arma Project Manager.csproj.GenerateResource.Cache
+D:\Projects\Arma Project Manager\Arma Project Manager\obj\Debug\Views\CreateNewProjectWindow.g.cs
+D:\Projects\Arma Project Manager\Arma Project Manager\obj\Debug\Views\CreateNewProjectWindow.baml
+D:\Projects\Arma Project Manager\Arma Project Manager\obj\Debug\Views\CreationWindow.g.cs
+D:\Projects\Arma Project Manager\Arma Project Manager\obj\Debug\Views\CreationWindow.baml
+D:\Projects\Arma Project Manager\Arma Project Manager\obj\Debug\Views\RenameWindow.g.cs
+D:\Projects\Arma Project Manager\Arma Project Manager\obj\Debug\Views\RenameWindow.baml

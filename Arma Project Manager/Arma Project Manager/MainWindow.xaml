@@ -1,0 +1,64 @@
+﻿<Window x:Class="Arma_Project_Manager.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Arma_Project_Manager"
+        mc:Ignorable="d"
+        Height="470" 
+        Width="720" 
+        UseLayoutRounding="True"
+        AllowsTransparency="True" 
+        WindowStyle="None"
+        Background="Transparent"
+        BorderBrush="Transparent">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="53*"/>
+            <ColumnDefinition Width="39*"/>
+            <ColumnDefinition Width="52*"/>
+        </Grid.ColumnDefinitions>
+        <!--Borders-->
+        <Border x:Name="TitleBarBG" BorderBrush="Transparent" BorderThickness="0" Background="#f5f8f9" Height="45" VerticalAlignment="Top" CornerRadius="5,5,0,0" MouseDown="TitleBar_Click" Grid.ColumnSpan="3"/>
+        <Border x:Name="LeftPannelBG" BorderBrush="#00bdf5" BorderThickness="0,1,0,0" Background="#ffffff" CornerRadius="0,0,0,5" Margin="0,45,1,0"/>
+        <Border x:Name="ContentBG" BorderBrush="#00bdf5" BorderThickness="0,1,0,0" Background="#f5f8f9" CornerRadius="0,0,5,0" Margin="0,45,0,0" Grid.Column="1" Grid.ColumnSpan="2"/>
+
+        <!--Main Form Coltrols-->
+        <TextBlock x:Name="TitleBarText" Text="Arma Project Manager" Margin="239,6,239,0" Foreground="#6d7a86" FontFamily="/Arma Project Manager;component/Fonts/#Lato" FontSize="24" MouseDown="TitleBar_Click" Height="32" VerticalAlignment="Top" TextDecorations="{x:Null}" Grid.ColumnSpan="3"/>
+        <Button Name="CloseBtn" Margin="0,10,10,0" Padding="0" Style="{StaticResource TitleBarBtn}" Click="ButtonController" Height="26" VerticalAlignment="Top" HorizontalAlignment="Right" Width="26" Grid.Column="2">
+            <Button.Background>
+                <ImageBrush ImageSource="Images/Close.png" Stretch="UniformToFill"/>
+            </Button.Background>
+        </Button>
+        <Button Name="MinimizeBtn" Margin="0,10,36,0" Padding="0" Style="{StaticResource TitleBarBtn}" Click="ButtonController" Height="26" VerticalAlignment="Top" HorizontalAlignment="Right" Width="26" Grid.Column="2">
+            <Button.Background>
+                <ImageBrush ImageSource="Images/Minimize.png" Stretch="UniformToFill"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="SettingsBtn" Style="{StaticResource SettingsButton}" Height="43" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="43" Click="ButtonController" ToolTip="Settings" Grid.Column="2"/>
+        <Button x:Name="CreateNewProjectBtn" Style="{StaticResource CreateNewProjectButton}" Height="43" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="43" Click="ButtonController" Margin="45,0,0,0" ToolTip="Create New Project" Grid.Column="1" Grid.ColumnSpan="2"/>
+        <Button x:Name="RefreshBtn" Style="{StaticResource RefreshButton}" Height="43" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="43" Click="ButtonController" Margin="2,0,0,0" ToolTip="Refresh Project View" Grid.Column="1" Grid.ColumnSpan="2"/>
+        <Button x:Name="DeleteProjectBtn" Style="{StaticResource DeleteProjectButton}" Height="43" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="43" Click="ButtonController" Margin="88,0,0,0" ToolTip="Delete Project" Grid.Column="1" Grid.ColumnSpan="2"/>
+        <TextBlock x:Name="ProjectNameLabel" TextAlignment="Center" Foreground="#6d7a86" FontSize="17" FontFamily="/Arma Project Manager;component/Fonts/#Lato" Margin="0,45,0,400"/>
+        <TreeView x:Name="ProjectTreeView" BorderThickness="0" Background="Transparent" Margin="0,70,0,0" ItemsSource="{Binding}" SelectedItemChanged="ProjectTreeView_SelectedItemChanged"/>
+        <ComboBox x:Name="ProjectsCombo" Margin="134,0,44,1" FontSize="16" FontFamily="/Arma Project Manager;component/Fonts/#Lato" Height="41" VerticalAlignment="Bottom" SelectionChanged="ProjectsCombo_SelectionChanged" ToolTip="Choose Active Project" Grid.Column="1" Grid.ColumnSpan="2"/>
+        <GridSplitter Width="1" Background="#FF00BDF5" Margin="0,45,0,0"/>
+
+        <!--Settings Stack-->
+        <Grid x:Name="SettingsStack" Margin="5,160,0,0" Visibility="Collapsed" IsEnabled="False" Grid.Column="2">
+            <Border Background="#57cef6" Margin="-1,0,1,0" Height="39" VerticalAlignment="Top"/>
+            <Border Background="#43494d" CornerRadius="0,0,5,0" Margin="-1,39,1,1" Padding="1"/>
+            <TextBlock Text="Settings" Margin="10,9,160,0" FontFamily="Calibri" FontSize="16" Foreground="White" FontWeight="Bold" TextDecorations="Underline" Height="25" VerticalAlignment="Top"/>
+            <Button x:Name="CloseSettingsBtn" Style="{StaticResource SettingsCloseButton}" HorizontalAlignment="Right" Width="41" Margin="0,-1,0,0" Click="ButtonController" Height="41" VerticalAlignment="Top" />
+            <CheckBox x:Name="RemoveSingleLineCommentsCheck" Content="Remove Single Line Comments" HorizontalAlignment="Right" Margin="0,0,50,89" VerticalAlignment="Bottom" Foreground="White" Width="199" FontFamily="/Arma Project Manager;component/Fonts/#Lato" FontWeight="Bold" Checked="SettingsCheckChanged"/>
+            <CheckBox x:Name="RemoveMultiLineCommentsCheck" Content="Remove Multi Line Comments" HorizontalAlignment="Right" Margin="0,0,50,54" VerticalAlignment="Bottom" Foreground="White" Width="199" FontFamily="/Arma Project Manager;component/Fonts/#Lato" FontWeight="Bold" Checked="SettingsCheckChanged"/>
+            <CheckBox x:Name="ObfuscateMissionCheck" Content="Obfuscate Mission" HorizontalAlignment="Right" Margin="0,0,110,19" VerticalAlignment="Bottom" Foreground="White" Width="139" FontFamily="/Arma Project Manager;component/Fonts/#Lato" FontWeight="Bold" Checked="SettingsCheckChanged"/>
+            <Label x:Name="SourcePathLabel" Content="Source Path" HorizontalAlignment="Right" Foreground="#FFFFFF" Margin="0,0,174,244" VerticalAlignment="Bottom" FontFamily="/Arma Project Manager;component/Fonts/#Lato"/>
+            <TextBox x:Name="SourcePathBox" TextWrapping="NoWrap" Foreground="#FFFFFF" Background="Transparent" Text="" Margin="0,0,10,222" HorizontalAlignment="Right" Width="239" Height="21" VerticalAlignment="Bottom" TextChanged="SettingTextBoxChanged"/>
+            <Label x:Name="OutputPathLabel" Content="Output Path" HorizontalAlignment="Right" Foreground="#FFFFFF" Margin="0,0,174,196" VerticalAlignment="Bottom" FontFamily="/Arma Project Manager;component/Fonts/#Lato"/>
+            <TextBox x:Name="OutputPathBox" TextWrapping="NoWrap" Foreground="#FFFFFF" Background="Transparent" Text="" Margin="0,0,10,173" HorizontalAlignment="Right" Width="239" Height="21" VerticalAlignment="Bottom" TextChanged="SettingTextBoxChanged"/>
+            <Label x:Name="MakePBOPathLabel" Content="MakePBO Path" HorizontalAlignment="Right" Foreground="#FFFFFF" Margin="0,0,157,147" VerticalAlignment="Bottom" FontFamily="/Arma Project Manager;component/Fonts/#Lato" RenderTransformOrigin="0.6,0.667"/>
+            <TextBox x:Name="MakePBOPathBox" TextWrapping="NoWrap" Foreground="#FFFFFF" Background="Transparent" Text="" Margin="0,0,10,124" HorizontalAlignment="Right" Width="239" Height="21" VerticalAlignment="Bottom" TextChanged="SettingTextBoxChanged"/>
+        </Grid>
+    </Grid>
+</Window>

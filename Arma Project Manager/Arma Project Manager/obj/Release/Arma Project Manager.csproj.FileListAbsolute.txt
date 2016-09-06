@@ -1,0 +1,34 @@
+C:\Users\Darren\documents\visual studio 2015\Projects\Arma Project Manager\Arma Project Manager\bin\Release\Arma Project Manager.exe.config
+C:\Users\Darren\documents\visual studio 2015\Projects\Arma Project Manager\Arma Project Manager\bin\Release\Arma Project Manager.exe
+C:\Users\Darren\documents\visual studio 2015\Projects\Arma Project Manager\Arma Project Manager\bin\Release\Arma Project Manager.pdb
+C:\Users\Darren\documents\visual studio 2015\Projects\Arma Project Manager\Arma Project Manager\obj\Release\MainWindow.g.cs
+C:\Users\Darren\documents\visual studio 2015\Projects\Arma Project Manager\Arma Project Manager\obj\Release\GeneratedInternalTypeHelper.g.cs
+C:\Users\Darren\documents\visual studio 2015\Projects\Arma Project Manager\Arma Project Manager\obj\Release\Arma Project Manager_MarkupCompile.cache
+C:\Users\Darren\documents\visual studio 2015\Projects\Arma Project Manager\Arma Project Manager\obj\Release\Arma Project Manager_MarkupCompile.lref
+C:\Users\Darren\documents\visual studio 2015\Projects\Arma Project Manager\Arma Project Manager\obj\Release\MainWindow.baml
+C:\Users\Darren\documents\visual studio 2015\Projects\Arma Project Manager\Arma Project Manager\obj\Release\Arma Project Manager.g.resources
+C:\Users\Darren\documents\visual studio 2015\Projects\Arma Project Manager\Arma Project Manager\obj\Release\Arma_Project_Manager.Properties.Resources.resources
+C:\Users\Darren\documents\visual studio 2015\Projects\Arma Project Manager\Arma Project Manager\obj\Release\Arma Project Manager.csproj.GenerateResource.Cache
+C:\Users\Darren\documents\visual studio 2015\Projects\Arma Project Manager\Arma Project Manager\obj\Release\Arma Project Manager.exe
+C:\Users\Darren\documents\visual studio 2015\Projects\Arma Project Manager\Arma Project Manager\obj\Release\Arma Project Manager.pdb
+C:\Users\Darren\documents\visual studio 2015\Projects\Arma Project Manager\Arma Project Manager\obj\Release\App.g.cs
+C:\Users\Darren\documents\visual studio 2015\Projects\Arma Project Manager\Arma Project Manager\obj\Release\App.baml
+C:\Users\Darren\documents\visual studio 2015\Projects\Arma Project Manager\Arma Project Manager\obj\Release\Arma Project Manager.csprojResolveAssemblyReference.cache
+D:\Projects\Arma Project Manager\Arma Project Manager\bin\Release\Arma Project Manager.exe.config
+D:\Projects\Arma Project Manager\Arma Project Manager\obj\Release\Arma Project Manager.exe
+D:\Projects\Arma Project Manager\Arma Project Manager\obj\Release\Arma Project Manager.pdb
+D:\Projects\Arma Project Manager\Arma Project Manager\bin\Release\Arma Project Manager.exe
+D:\Projects\Arma Project Manager\Arma Project Manager\bin\Release\Arma Project Manager.pdb
+D:\Projects\Arma Project Manager\Arma Project Manager\obj\Release\MainWindow.g.cs
+D:\Projects\Arma Project Manager\Arma Project Manager\obj\Release\App.g.cs
+D:\Projects\Arma Project Manager\Arma Project Manager\obj\Release\GeneratedInternalTypeHelper.g.cs
+D:\Projects\Arma Project Manager\Arma Project Manager\obj\Release\Arma Project Manager_MarkupCompile.cache
+D:\Projects\Arma Project Manager\Arma Project Manager\obj\Release\Arma Project Manager_MarkupCompile.lref
+D:\Projects\Arma Project Manager\Arma Project Manager\obj\Release\App.baml
+D:\Projects\Arma Project Manager\Arma Project Manager\obj\Release\MainWindow.baml
+D:\Projects\Arma Project Manager\Arma Project Manager\obj\Release\Arma Project Manager.g.resources
+D:\Projects\Arma Project Manager\Arma Project Manager\obj\Release\Arma_Project_Manager.Properties.Resources.resources
+D:\Projects\Arma Project Manager\Arma Project Manager\obj\Release\Arma Project Manager.csproj.GenerateResource.Cache
+D:\Projects\Arma Project Manager\Arma Project Manager\obj\Release\Views\CreateNewProjectWindow.g.cs
+D:\Projects\Arma Project Manager\Arma Project Manager\obj\Release\Views\CreateNewProjectWindow.baml
+D:\Projects\Arma Project Manager\Arma Project Manager\obj\Release\Arma Project Manager.csprojResolveAssemblyReference.cache

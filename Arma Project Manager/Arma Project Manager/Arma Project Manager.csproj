@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5FA674B1-1627-46CF-A582-717509169819}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Arma_Project_Manager</RootNamespace>
+    <AssemblyName>Arma Project Manager</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="Code\Helpers.cs" />
+    <Compile Include="Code\ProjectCreator.cs" />
+    <Compile Include="Model\MissionDirectoryItem.cs" />
+    <Compile Include="Model\PBODirectoryItem.cs" />
+    <Compile Include="Model\BaseDirectoryItem.cs" />
+    <Compile Include="Views\CreateNewProjectWindow.xaml.cs">
+      <DependentUpon>CreateNewProjectWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CreationWindow.xaml.cs">
+      <DependentUpon>CreationWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\RenameWindow.xaml.cs">
+      <DependentUpon>RenameWindow.xaml</DependentUpon>
+    </Compile>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Code\Glob.cs" />
+    <Compile Include="Code\IniFile.cs" />
+    <Compile Include="Code\Project.cs" />
+    <Compile Include="Code\SettingsController.cs" />
+    <Compile Include="Model\ItemProvider.cs" />
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="Views\CreateNewProjectWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\CreationWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\RenameWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Model\DirectoryItem.cs" />
+    <Compile Include="Model\FileItem.cs" />
+    <Compile Include="Model\Item.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <Resource Include="Fonts\Lato-Black.ttf" />
+    <Resource Include="Fonts\Lato-Bold.ttf" />
+    <Resource Include="Fonts\Lato-Hairline.ttf" />
+    <Resource Include="Fonts\Lato-Heavy.ttf" />
+    <Resource Include="Fonts\Lato-Light.ttf" />
+    <Resource Include="Fonts\Lato-Medium.ttf" />
+    <Resource Include="Fonts\Lato-Regular.ttf" />
+    <Resource Include="Fonts\Lato-Semibold.ttf" />
+    <Resource Include="Fonts\Lato-SemiboldItalic.ttf" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Close.png" />
+    <Resource Include="Images\Minimize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\SettingsCloseActive.png" />
+    <Resource Include="Images\SettingsCloseIdle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\FolderIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\FileIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\CreateNewProjectIconActive.png" />
+    <Resource Include="Images\CreateNewProjectIconIdle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\DeleteProjectIconActive.png" />
+    <Resource Include="Images\DeleteProjectIconIdle.png" />
+    <Resource Include="Images\SettingsIconActive.png" />
+    <Resource Include="Images\SettingsIconIdle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\ContextMenu\RenameIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\ContextMenu\FolderIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\ContextMenu\DeleteIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\ContextMenu\CreateIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\ContextMenu\PBOIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\ContextMenu\CPPIcon.png" />
+    <Resource Include="Images\ContextMenu\HPPIcon.png" />
+    <Resource Include="Images\ContextMenu\SQFIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\ContextMenu\Other.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\ImportProjectIconActive.png" />
+    <Resource Include="Images\ImportProjectIconIdle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\RefreshIconActive.png" />
+    <Resource Include="Images\RefreshIconIdle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\ContextMenu\EventIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\ContextMenu\FileIcon.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
